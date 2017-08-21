@@ -1,0 +1,6 @@
+function energy = KE(U,V)
+%for Fourier transformed U and V
+energy = 1/2 * sum(sum(...
+	norm(U(:)).^2/numel(U) + ...
+	norm(V(:)).^2/numel(V)));
+end
